@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- w8n1.html by Kyle Zindell on 3/23/2017
+  --presents a form to the user, then calls a php program
+  -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Arrow Speed Calculator</title>
+<style type="text/css">
+body {
+		background: #eeeeee;
+		color: blue;
+		font-family: Tahoma, Geneve, san-serriff;
+		font-size: large;
+		padding: 10px;
+}
+h1 {
+		font-size: 24pt;
+		font-style: normal;
+		font-weight: bolder;
+		font-variant: small-caps;
+}
+</style>
+</head>
+
+<body> 
+<h1> Arrow Speed Calculator</h1>
+<p>Please enter the following information about your bow and then click the submit button:</p>
+
+<form name="speed" method="get" action="calculator.php">
+
+<p>IBO rating for the bow (FPS):
+<input type="number" name="ibo" size="10" required
+		Placeholder="Enter IBO speed">
+</p>
+ 
+<p>Actual draw length of the bow (inches): 
+<input type="number" name="dl" size="20" required
+		Placeholder="Enter draw length">
+</p>
+
+<p>Peak draw weight (pounds):
+<input type="number" name="dw" size="10" required
+		Placeholder="Enter draw weight">
+</p>
+ 
+<p>Total arrow weight (grains): 
+<input type="number" name="arrow" size="10" required
+		Placeholder="Enter arrow weight">
+</p>
+
+<p>Additional weight on the string (grains):
+<input type="number" name="string" size="10" required
+		Placeholder="Enter string weight">
+</p>
+ 
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
